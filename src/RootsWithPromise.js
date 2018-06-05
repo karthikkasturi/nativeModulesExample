@@ -43,7 +43,7 @@ export default class RootsWithCallback extends Component {
         return (
             <View style={styles.container}>
                 <View style={styles.container}>
-                    <Text textAlign='center'>Callbacks</Text>
+                    <Text textAlign='center'>Promises</Text>
                     <Text style={styles.welcome}>
                         {this.state.properData.toString()}
                     </Text>

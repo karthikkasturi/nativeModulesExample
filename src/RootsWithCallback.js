@@ -21,13 +21,18 @@ export default class RootsWithCallback extends Component {
             improperResult: []
         }
         this._handleProperButtonClick = () => {
+
+            console.log('somethig')
             MathNative.rootsWithCallback(
                 this.state.properData,
                 err => {
+                    console.log('somethig')
                     this.setState({ properResult: err.toString() })
-                    console.log(err)
                 },
-                result => this.setState({ properResult: result.toString() })
+                result => {
+                    console.log(result)
+                    this.setState({ properResult: result.toString() })
+                }
             )
         }
         this._handleImproperButtonClick = () => {
